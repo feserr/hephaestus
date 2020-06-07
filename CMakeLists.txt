@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.7 FATAL_ERROR)
 
 set(NAME hephaestus)
-set(REPO_VERSION 1.0.0)
+set(REPO_VERSION 0.1.0)
 
 project(${NAME} VERSION ${REPO_VERSION} DESCRIPTION "Utils library")
 
