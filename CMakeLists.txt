@@ -1,11 +1,12 @@
 cmake_minimum_required(VERSION 3.7 FATAL_ERROR)
 
 set(NAME hephaestus)
-set(REPO_VERSION 0.1.0)
+set(REPO_VERSION 0.1.1)
 
 project(${NAME} VERSION ${REPO_VERSION} DESCRIPTION "Utils library")
 
-set(CMAKE_C_STANDARD 99)
+set(CMAKE_C_STANDARD 11)
+set(CMAKE_CXX_STANDARD 11)
 
 # Set the debug or relese mode.
 if (CMAKE_BUILD_TYPE MATCHES Debug)
@@ -18,7 +19,7 @@ else ()
 endif()
 
 set(SOURCE_FILES
-  src/log.c)
+  src/log.cpp)
 
 set(HEADER_PATHS include)
 set(HEADER_FILES
